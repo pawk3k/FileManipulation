@@ -6,7 +6,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "webpack serve --open --port 3001 --host 127.0.0.1",
-        "startu": "node ./scripts/shrink-icon.js || webpack serve --open --port 3001 --host 127.0.0.1",
+        "startu": "node ./scripts/shrink-icon.js & webpack serve --open --port 3001 --host 127.0.0.1",
         "resize": "node /home/kraven/Documents/4TP/test/scripts/shrink-icon.js",
         "build": "webpack"
     },
@@ -21,7 +21,6 @@
         "webpack-dev-server": "^3.11.2"
     },
     "dependencies": {
-        "jimp": "^0.16.1",
         "sharp": "^0.28.3"
     }
 }

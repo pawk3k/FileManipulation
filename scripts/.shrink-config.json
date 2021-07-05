@@ -1,0 +1,5 @@
+{
+    "inputPathConfig": "assets/normal",
+    "outputPathConfig": "assets/shrinked",
+    "ignorePathConfig": ["assets/normal/ignored", "assets/normal/ignored1"]
+}

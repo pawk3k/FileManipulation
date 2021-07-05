@@ -49,12 +49,28 @@ const OUTPUT_PATH = path.join(__dirname, '../assets/shrinked');
 // copyRecursiveSync(INPUT_PATH, OUTPUT_PATH);
 const sharp = require('sharp');
 
-sharp(`${INPUT_PATH}/correct.jpg`)
-    .resize({ height: 1560, width: 1600 })
-    .toFile(`${OUTPUT_PATH}/kek.jpg`)
-    .then(function (newFileInfo) {
-        console.log('Success');
-    })
-    .catch(function (err) {
-        console.log('Error occured');
-    });
+// sharp(`${INPUT_PATH}/correct.jpg`)
+//     .resize({ height: 1560, width: 1600 })
+//     .toFile(`${OUTPUT_PATH}/kek.jpg`)
+//     .then(function (newFileInfo) {
+//         console.log('Success');
+//     })
+//     .catch(function (err) {
+//         console.log('Error occured');
+//     });
+
+// const image = sharp(`${INPUT_PATH}/correct.jpg`);
+// image
+//     .metadata()
+//     .then(function (metadata) {
+//         console.log(metadata.width);
+//         return image
+//             .resize(Math.round(metadata.width / 2))
+//             .webp()
+//             .toBuffer();
+//     })
+//     .then(function (data) {
+//         // data contains a WebP image half the width and height of the original JPEG
+//     });
+const someObject = require('./.shrink-config');
+console.log(someObject);
